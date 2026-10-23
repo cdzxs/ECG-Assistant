@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f8f7">
+    <meta name="description" content="Explore ECG heartbeat classification in an educational prototype.">
+    <title>Analyse ECG | ECG Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2.1-6 4.1 13 2.3-7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>ECG Assistant</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Analyse.html" class="active" aria-current="page">Analyse ECG</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="analyze-page">
+        <section class="analyze-heading">
+            <p class="section-label">ECG ANALYSIS - PROTOTYPE</p>
+            <h1>Explore a heartbeat</h1>
+            <p>
+                Paste a heartbeat segment containing exactly 200 numerical
+                values to explore the model's classification and class scores.
+            </p>
+        </section>
+
+        <section class="analysis-card">
+            <label for="heartbeat">Heartbeat data - 200 values</label>
+            <p class="input-help" id="heartbeat-help">
+                Separate the 200 values with commas or spaces.
+            </p>
+
+            <textarea
+                id="heartbeat"
+                name="heartbeat"
+                aria-describedby="heartbeat-help value-count"
+                placeholder="Example: 0.12, 0.18, 0.25, ..."
+                rows="8"
+            ></textarea>
+
+            <div class="input-footer">
+                <span id="value-count">0 values entered</span>
+                <button type="button" id="sample-button">
+                    Load sample
+                </button>
+            </div>
+
+            <button type="button" id="analyze-button" class="primary-button">
+                Analyse heartbeat
+            </button>
+
+            <p id="status-message" role="status"></p>
+
+            <section id="results" class="results" hidden>
+                <h2>Analysis results</h2>
+                <p>Predicted category: <strong id="prediction"></strong></p>
+                <p>Confidence: <strong id="confidence"></strong></p>
+
+                <h3>Class probabilities</h3>
+                <div id="probabilities"></div>
+            </section>
+        </section>
+
+        <p class="medical-notice">
+            Educational prototype only. Predictions are not medical diagnoses
+            and must not be used to make clinical decisions.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

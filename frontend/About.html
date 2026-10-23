@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f8f7">
+    <meta name="description" content="Learn about the ECG Assistant educational heartbeat classification prototype.">
+    <title>About | ECG Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2.1-6 4.1 13 2.3-7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>ECG Assistant</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Analyse.html">Analyse ECG</a></li>
+                <li><a href="About.html" class="active" aria-current="page">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <p class="section-label">ABOUT THE PROJECT</p>
+            <h1>Understanding the heartbeat, one beat at a time.</h1>
+            <p>
+                ECG Assistant is a machine-learning prototype designed
+                to classify heartbeat segments and demonstrate one way
+                artificial intelligence can be applied to ECG data.
+            </p>
+        </section>
+
+        <section class="about-details">
+            <div class="about-card">
+                <h2>What it does</h2>
+                <p>
+                    The system analyses a numerical heartbeat segment
+                    containing 200 values and predicts one of four
+                    heartbeat categories.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>How it works</h2>
+                <p>
+                    The heartbeat values are standardised and passed
+                    to a trained convolutional neural network (CNN).
+                    The model returns a predicted category and
+                    confidence scores for the four classes.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Its purpose</h2>
+                <p>
+                    This project provides a practical demonstration
+                    of machine learning in ECG signal classification
+                    and serves as a foundation for further learning
+                    and development.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Important limitations</h2>
+                <p>
+                    ECG Assistant is an educational prototype, not
+                    a clinically validated diagnostic system. It
+                    currently accepts numerical heartbeat data and
+                    does not directly analyse ECG images or connect
+                    to ECG equipment.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-notice">
+            <h2>Designed for learning and exploration</h2>
+            <p>
+                Predictions should not be used to make medical
+                decisions. Always consult a qualified healthcare
+                professional for ECG interpretation and medical advice.
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>

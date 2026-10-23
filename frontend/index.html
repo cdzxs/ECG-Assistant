@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f8f7">
+    <meta name="description" content="Explore ECG heartbeat analysis in an educational machine-learning prototype.">
+    <title>ECG Assistant | Heartbeat analysis prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2.1-6 4.1 13 2.3-7H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>ECG Assistant</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="Analyse.html">Analyse ECG</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-hero" aria-labelledby="welcome-title">
+            <!-- <video autoplay muted loop playsinline class="hero-video" aria-hidden="true" poster="Electrocardiogram ecg in hand cardiogram printout on male patient background _ Premium Photo.jpg">
+                <source src="heart_beat.mp4" type="video/mp4">
+            </video> -->
+            <div class="clip1">
+                <img id = 'clip1' src="ecg.jpg" alt="patient on ecg">
+            </div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">A learning project in cardiac signals</p>
+                    <h1 id="welcome-title">A clearer look at every heartbeat.</h1>
+                    <p>Explore how machine learning can classify ECG heartbeat segments in a simple, educational prototype.</p>
+                    <div class="button-row">
+                        <a class="button-link" href="Analyse.html">Try ECG analysis <span aria-hidden="true">&nbsp;→</span></a>
+                        <a class="button-link secondary" href="About.html">About the project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section" aria-labelledby="ecg-intro-title">
+            <div class="intro-grid">
+                <div>
+                    <p class="section-label">ECG BASICS</p>
+                    <h2 id="ecg-intro-title">Reading the heart's electrical story</h2>
+                    <p class="intro-copy">An electrocardiogram (ECG or EKG) records the heart's electrical signals through small electrodes placed on the skin. Clinicians use ECGs to examine heart rate and rhythm and help assess a range of heart conditions.</p>
+                </div>
+                <div class="heart-video-frame">
+                    <video autoplay muted loop playsinline class="heart" id="heart" aria-label="Animated heartbeat visualization">
+                        <source src="heart_beat.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <p class="intro-followup">This focuses on short, numerical heartbeat segments. It offers a hands-on way to see how a trained model can turn signal data into a classification result.</p>
+            <div class="feature-strip" aria-label="Prototype overview">
+                <div class="feature-item"><strong>200 data points</strong><span>One heartbeat segment per analysis</span></div>
+                <div class="feature-item"><strong>Four categories</strong><span>Model classification with class scores</span></div>
+                <div class="feature-item"><strong>Educational prototype</strong><span>For exploration, not clinical use</span></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
